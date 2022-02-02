@@ -9,7 +9,7 @@
     
   </head>
   <nav class="navbar navbar-expand-lg p-2">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">GMDB</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,27 +29,19 @@
         <button class="btn btn-outline-success my-2 my-sm-0 m-2" type="submit">Search</button>
       </form>
   </nav>
-    <div class="container m-5 p-2">
-        <div class="container mt-5">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
-                    <div class="card px-5 py-5" id="form1">
-                        <div class="form-data" v-if="!submitted">
-                            <div class="forms-inputs mb-4"> <span>Email or username</span> <input autocomplete="off" type="text" v-model="email" v-bind:class="{'form-control':true, 'is-invalid' : !validEmail(email) && emailBlured}" v-on:blur="emailBlured = true">
-                                <div class="invalid-feedback">A valid email is required!</div>
-                            </div>
-                            <div class="forms-inputs mb-4"> <span>Password</span> <input autocomplete="off" type="password" v-model="password" v-bind:class="{'form-control':true, 'is-invalid' : !validPassword(password) && passwordBlured}" v-on:blur="passwordBlured = true">
-                                <div class="invalid-feedback">Password must be 8 character!</div>
-                            </div>
-                            <div class="mb-3"> <button v-on:click.stop.prevent="submit" class="btn btn-dark w-100">Login</button> </div>
-                        </div>
-                        <div class="success-data" v-else>
-                            <div class="text-center d-flex flex-column"> <i class='bx bxs-badge-check'></i> <span class="text-center fs-1">You have been logged in <br> Successfully</span> </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container mt-5 w-75">
+        <h1 class="login-h1">Login</h1>
+        <form class="w-75">
+            <div class="form-group m-3">
+                <label for="exampleInputEmail1">Email address:</label>
+                <input type="text" placeholder="Username" required class="form-control form-input">
             </div>
-        </div>
+            <div class="form-group m-3">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" placeholder="Password" required class="form-control form-input">
+            </div>
+            <input type="submit" class="form-submit m-3 btn btn-primary" value="Log In">
+        </form>
     </div>
     <!-- Bootstrap Bundle with Popper Included -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

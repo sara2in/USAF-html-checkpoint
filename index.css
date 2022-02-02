@@ -1,6 +1,7 @@
 .navbar {
     background-color: #343a40;
 }
+
 .navbar button {
     color: #ffc108;
     border-color: #ffc108;
@@ -8,4 +9,16 @@
 
 .navbar a {
     color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.alert {
+    /* !important only for over riding bootstrap alert class */
+    color: #ffc108 !important;
+    background-color: #6d757d !important;
 }
