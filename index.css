@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #343a40;
+}
+.navbar button {
+    color: #ffc108;
+    border-color: #ffc108;
+}
+
+.navbar a {
+    color: white;
+}
